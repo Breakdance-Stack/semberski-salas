@@ -12,7 +12,47 @@
   <link rel="icon" href="assets/img/favicon.ico">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    @font-face{font-family:'Lora';font-style:normal;font-weight:400 700;font-display:swap;src:url('assets/fonts/lora-latin.woff2') format('woff2')}
+    @font-face{font-family:'Carattere';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/carattere-latin.woff2') format('woff2')}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{overflow-x:hidden}body{font-family:'Lora',Georgia,serif;font-size:17px;line-height:1.7;color:#2c2c2c;background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}a{color:#642e15;text-decoration:none}
+    .skip-link{position:absolute;top:-100px;left:16px;background:#642e15;color:#fff;padding:8px 16px;border-radius:8px;z-index:9999;font-size:14px}.skip-link:focus{top:8px}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    .topbar{background:#272c30;color:rgba(255,255,255,.85);font-size:13px;height:40px;display:flex;align-items:center;position:relative;z-index:101}
+    .topbar .container{display:flex;justify-content:space-between;align-items:center;width:100%}
+    .topbar-left{display:flex;gap:24px;align-items:center}.topbar-left a{color:rgba(255,255,255,.85);font-size:13px;display:flex;align-items:center;gap:6px}
+    .topbar-left svg{width:14px;height:14px;fill:currentColor;flex-shrink:0}.topbar-right{display:flex;gap:12px;align-items:center}
+    .topbar-right a{color:rgba(255,255,255,.7);display:flex;align-items:center}.topbar-right svg{width:18px;height:18px;fill:currentColor}
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #e5e2d9;height:80px;transition:transform .35s ease,box-shadow .35s ease}
+    .site-header.header-hidden{transform:translateY(-100%)}
+    .header-row{display:flex;align-items:center;justify-content:space-between;height:80px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand img{height:52px;width:auto}
+    .brand .name{font-size:20px;font-weight:700;color:#642e15;letter-spacing:-.3px}
+    nav{display:flex;align-items:center;gap:8px}.nav-links{display:flex;gap:4px;align-items:center}
+    .nav-links a{padding:8px 16px;color:#2c2c2c;font-size:15px;font-weight:500;border-radius:8px;text-decoration:none}
+    .nav-cta{display:inline-flex;align-items:center;padding:10px 24px;background:#642e15;color:#fff!important;font-size:14px;font-weight:600;border-radius:50px;text-decoration:none!important;white-space:nowrap}
+    .burger{display:none;background:none;border:none;cursor:pointer;width:36px;height:36px;position:relative;padding:6px}
+    .burger span{display:block;width:24px;height:2px;background:#2c2c2c;border-radius:2px;position:absolute;left:6px}
+    .burger span:nth-child(1){top:9px}.burger span:nth-child(2){top:17px}.burger span:nth-child(3){top:25px}
+    .mobile-menu[hidden]{display:none}
+    .hero{position:relative;min-height:85vh;display:flex;align-items:center;overflow:hidden;background:#1a1a1a}
+    .hero-bg{position:absolute;inset:0;z-index:1}.hero-bg img{width:100%;height:100%;object-fit:cover}
+    .hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(26,26,26,.55) 0%,rgba(26,26,26,.2) 40%,rgba(26,26,26,.6) 100%),linear-gradient(135deg,rgba(100,46,21,.3) 0%,transparent 60%)}
+    .hero-content{position:relative;z-index:3;color:#fff;max-width:700px;padding:80px 0}
+    .hero-script{font-family:'Carattere',cursive;font-size:clamp(28px,5vw,48px);color:#a0ce4e;margin-bottom:8px;line-height:1.1}
+    .hero h1{font-size:clamp(32px,5vw,56px);font-weight:700;line-height:1.15;margin-bottom:20px}
+    .hero-lead{font-size:18px;line-height:1.7;color:rgba(255,255,255,.9);margin-bottom:32px;max-width:560px}
+    .hero-buttons{display:flex;gap:16px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 32px;font-family:'Lora',Georgia,serif;font-size:15px;font-weight:600;border-radius:50px;border:none;cursor:pointer;text-decoration:none;white-space:nowrap}
+    .btn-primary{background:#7ab32a;color:#1a1a1a}.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
+    .page-hero{background:linear-gradient(135deg,#642e15 0%,#4a2010 100%);padding:80px 0 60px;text-align:center;color:#fff}
+    .page-hero h1{font-size:clamp(28px,4vw,44px);font-weight:700;margin-top:4px}
+    @media(max-width:768px){.topbar{display:none}.nav-links,.nav-cta:not(.mobile-menu .nav-cta){display:none}.burger{display:block}.site-header{height:64px}.header-row{height:64px}.hero{min-height:70vh}.hero-content{padding:40px 0}.hero-buttons{flex-direction:column}.hero-buttons .btn{width:100%}}
+  </style>
+  <link rel="stylesheet" href="assets/css/styles.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript>
 </head>
 <body>
   <div data-include="{{ROOT}}partials/header.html"></div>

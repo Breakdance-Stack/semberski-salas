@@ -58,8 +58,9 @@
   --brand-brown: #642e15;
   --brand-brown-dark: #4a2010;
   --brand-brown-light: #8b4a2a;
-  --brand-green: #a0ce4e;
-  --brand-green-dark: #8ab83e;
+  --brand-green: #7ab32a;
+  --brand-green-light: #a0ce4e;
+  --brand-green-dark: #6a9d24;
   --brand-cream: #f7f5f1;
   --brand-warm: #e5e2d9;
 
@@ -69,7 +70,7 @@
   --surface: #ffffff;
   --text: #2c2c2c;
   --text-dark: #1a1a1a;
-  --muted: #6b6b6b;
+  --muted: #595959;
   --line: #e5e2d9;
 
   --font-body: 'Lora', Georgia, 'Times New Roman', serif;
@@ -145,7 +146,7 @@ a:hover { color: var(--brand-brown-light); }
   align-items: center;
   gap: 6px;
 }
-.topbar-left a:hover { color: var(--brand-green); }
+.topbar-left a:hover { color: var(--brand-green-light); }
 .topbar-left svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
 .topbar-right {
   display: flex;
@@ -157,7 +158,7 @@ a:hover { color: var(--brand-brown-light); }
   display: flex;
   align-items: center;
 }
-.topbar-right a:hover { color: var(--brand-green); }
+.topbar-right a:hover { color: var(--brand-green-light); }
 .topbar-right svg { width: 18px; height: 18px; fill: currentColor; }
 
 /* --- Header --- */
@@ -326,7 +327,7 @@ nav { display: flex; align-items: center; gap: 8px; }
 .hero-script {
   font-family: var(--font-display);
   font-size: clamp(28px, 5vw, 48px);
-  color: var(--brand-green);
+  color: var(--brand-green-light);
   margin-bottom: 8px;
   line-height: 1.1;
 }
@@ -380,10 +381,10 @@ nav { display: flex; align-items: center; gap: 8px; }
 .btn-outline {
   background: transparent;
   color: #fff;
-  border: 2px solid rgba(255,255,255,.5);
+  border: 2px solid rgba(255,255,255,.7);
 }
 .btn-outline:hover {
-  background: rgba(255,255,255,.1);
+  background: rgba(255,255,255,.15);
   border-color: #fff;
   color: #fff;
   transform: translateY(-2px);
@@ -567,7 +568,7 @@ section { padding: 80px 0; }
   color: var(--brand-brown);
   line-height: 1.1;
 }
-.section-brown .stat-item strong { color: var(--brand-green); }
+.section-brown .stat-item strong { color: var(--brand-green-light); }
 .stat-item span {
   font-size: 15px;
   color: var(--muted);
@@ -891,7 +892,7 @@ footer {
   margin-bottom: 8px;
   text-decoration: none;
 }
-.footer-grid a:hover { color: var(--brand-green); }
+.footer-grid a:hover { color: var(--brand-green-light); }
 .footer-brand p {
   font-size: 14px;
   line-height: 1.7;
@@ -931,7 +932,7 @@ footer {
   color: rgba(255,255,255,.5);
   font-size: 13px;
 }
-.footer-bottom a:hover { color: var(--brand-green); }
+.footer-bottom a:hover { color: var(--brand-green-light); }
 
 /* --- Breadcrumb --- */
 .breadcrumb {
@@ -950,7 +951,7 @@ footer {
   color: #fff;
 }
 .page-hero .section-script {
-  color: var(--brand-green);
+  color: var(--brand-green-light);
 }
 .page-hero h1 {
   font-size: clamp(28px, 4vw, 44px);
