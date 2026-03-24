@@ -364,7 +364,7 @@ nav { display: flex; align-items: center; gap: 8px; }
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -478,12 +478,11 @@ section { padding: 80px 0; }
   padding: 36px 28px;
   text-align: center;
   border: 1px solid var(--line);
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition);
 }
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--brand-green);
+  box-shadow: 0 0 0 1px var(--brand-green), var(--shadow-md);
 }
 .service-card-icon {
   width: 56px;
@@ -646,11 +645,10 @@ section { padding: 80px 0; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: box-shadow var(--transition), border-color var(--transition);
+  transition: box-shadow var(--transition);
 }
 .room-card:hover {
-  box-shadow: var(--shadow-sm);
-  border-color: var(--brand-green);
+  box-shadow: 0 0 0 1px var(--brand-green), var(--shadow-sm);
 }
 .room-card h3 {
   font-size: 17px;
@@ -777,14 +775,13 @@ section { padding: 80px 0; }
   border-radius: var(--radius);
   background: var(--bg);
   color: var(--text);
-  transition: border-color var(--transition);
+  transition: box-shadow var(--transition);
 }
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
   outline: none;
-  border-color: var(--brand-brown);
-  box-shadow: 0 0 0 3px rgba(100,46,21,.1);
+  box-shadow: 0 0 0 1px var(--brand-brown), 0 0 0 4px rgba(100,46,21,.1);
 }
 .form-group textarea { resize: vertical; min-height: 120px; }
 
