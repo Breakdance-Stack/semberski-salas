@@ -19,7 +19,7 @@ Semberski Salas je ugostiteljski kompleks smješten u Dvorovima kod Bijeljine, B
 - Email: info@semberskisalas.com
 - Adresa: Pavlovića put, 76300 Dvorovi, Bijeljina, BiH
 - Radno vrijeme: Ponedeljak–Nedjelja 07:00–23:00
-- Web: https://semberskisalas.com
+- Web: https://breakdance-stack.github.io/semberski-salas
 
 ## Društvene mreže
 

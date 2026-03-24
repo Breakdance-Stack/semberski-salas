@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://semberskisalas.com/sitemap.xml
+Sitemap: https://breakdance-stack.github.io/semberski-salas/sitemap.xml
