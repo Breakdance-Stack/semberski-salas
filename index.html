@@ -64,8 +64,9 @@
     .page-hero h1{font-size:clamp(28px,4vw,44px);font-weight:700;margin-top:4px}
     @media(max-width:768px){.topbar{display:none}.nav-links,.nav-cta:not(.mobile-menu .nav-cta){display:none}.burger{display:block}.site-header{height:64px}.header-row{height:64px}.hero{min-height:70vh}.hero-content{padding:40px 0}.hero-buttons{flex-direction:column}.hero-buttons .btn{width:100%}}
   </style>
-  <link rel="stylesheet" href="assets/css/styles.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript>
+  <link rel="preload" href="assets/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/carattere-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
 
   <script type="application/ld+json">
   {
@@ -168,7 +169,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-bg">
-        <img src="assets/img/hero.webp" alt="Semberski Salas — pogled na ugostiteljski kompleks kod Bijeljine" width="1400" height="788" loading="eager" fetchpriority="high">
+        <img src="assets/img/hero.webp" alt="Semberski Salas — pogled na ugostiteljski kompleks kod Bijeljine" width="1200" height="799" loading="eager" fetchpriority="high">
       </div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
@@ -255,7 +256,7 @@
       <div class="container">
         <div class="feature-row">
           <div class="feature-img">
-            <img src="assets/img/jahanje.webp" alt="Škola jahanja u Semberskom Salasu — konji i jahači na imanju" width="700" height="400" loading="lazy">
+            <img src="assets/img/jahanje.webp" alt="Škola jahanja u Semberskom Salasu — konji i jahači na imanju" width="1000" height="668" loading="lazy">
           </div>
           <div class="feature-text">
             <div class="section-script">Ergela INTERGAJ</div>
@@ -273,7 +274,7 @@
       <div class="container">
         <div class="feature-row reverse">
           <div class="feature-img">
-            <img src="assets/img/bazen.webp" alt="Aqua park Semberski Salas — bazeni za odrasle i djecu" width="700" height="400" loading="lazy">
+            <img src="assets/img/bazen.webp" alt="Aqua park Semberski Salas — bazeni za odrasle i djecu" width="1000" height="563" loading="lazy">
           </div>
           <div class="feature-text">
             <div class="section-script">Ljeto na Salasu</div>
@@ -291,7 +292,7 @@
       <div class="container">
         <div class="feature-row">
           <div class="feature-img">
-            <img src="assets/img/restoran.webp" alt="Restoran Semberski Salas — domaća kuhinja i tradicionalna jela" width="700" height="400" loading="lazy">
+            <img src="assets/img/restoran.webp" alt="Restoran Semberski Salas — domaća kuhinja i tradicionalna jela" width="1000" height="477" loading="lazy">
           </div>
           <div class="feature-text">
             <div class="section-script">Gastronomija</div>
@@ -309,7 +310,7 @@
       <div class="container">
         <div class="feature-row reverse">
           <div class="feature-img">
-            <img src="assets/img/banket.webp" alt="Banket sala Semberski Salas — elegantna sala za svadbe i proslave" width="700" height="400" loading="lazy">
+            <img src="assets/img/banket.webp" alt="Banket sala Semberski Salas — elegantna sala za svadbe i proslave" width="1000" height="750" loading="lazy">
           </div>
           <div class="feature-text">
             <div class="section-script">Proslave</div>
@@ -326,7 +327,7 @@
       <div class="container">
         <div class="feature-row">
           <div class="feature-img">
-            <img src="assets/img/smjestaj.webp" alt="Smještaj Semberski Salas — lux apartman sa đakuzijem" width="700" height="400" loading="lazy">
+            <img src="assets/img/smjestaj.webp" alt="Smještaj Semberski Salas — lux apartman sa đakuzijem" width="1000" height="1052" loading="lazy">
           </div>
           <div class="feature-text">
             <div class="section-script">Smještaj</div>
