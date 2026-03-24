@@ -1,0 +1,56 @@
+{
+  "business": {
+    "name": "Semberski Salas",
+    "legal_entity": "INTERGAJ D.O.O. Bijeljina",
+    "type": "Hospitality Complex",
+    "description": "Ugostiteljski kompleks sa restoranom, banket salom, smještajem, aqua parkom i ergelom konja u Dvorovima kod Bijeljine.",
+    "established": "1990s",
+    "tagline": "Spoj modernog i tradicionalnog"
+  },
+  "contact": {
+    "phone": ["+38755257500", "+38755257510", "+38766944393", "+38765595817"],
+    "email": "info@semberskisalas.com",
+    "address": {
+      "street": "Pavlovića put",
+      "city": "Dvorovi",
+      "postal_code": "76300",
+      "region": "Bijeljina",
+      "country": "BA"
+    },
+    "coordinates": {
+      "latitude": 44.785675,
+      "longitude": 19.27625
+    },
+    "hours": "Mon-Sun 07:00-23:00"
+  },
+  "services": [
+    {
+      "name": "Restoran",
+      "description": "Domaća kuhinja — roštilj, jela ispod sača, svježa pastrmka, morski plodovi",
+      "capacity": "120 (indoor) + 200 (terasa)"
+    },
+    {
+      "name": "Banket sala",
+      "description": "Elegantna sala za svadbe, rođendane i poslovne događaje",
+      "capacity": "300"
+    },
+    {
+      "name": "Smještaj",
+      "description": "Jednokrevetne sobe, dvokrevetne sobe, lux apartmani sa đakuzijem",
+      "price_range": "47.50 - 152.50 KM"
+    },
+    {
+      "name": "Aqua park",
+      "description": "Bazeni za odrasle i djecu"
+    },
+    {
+      "name": "Ergela konja",
+      "description": "30+ konja, škola jahanja, vožnja fijakerom"
+    }
+  ],
+  "social": {
+    "facebook": "https://www.facebook.com/SemberskiSalas/",
+    "instagram": "https://www.instagram.com/semberskisalas/"
+  },
+  "website": "https://semberskisalas.com"
+}
