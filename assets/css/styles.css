@@ -58,9 +58,9 @@
   --brand-brown: #642e15;
   --brand-brown-dark: #4a2010;
   --brand-brown-light: #8b4a2a;
-  --brand-green: #7ab32a;
+  --brand-green: #4d7e16;
   --brand-green-light: #a0ce4e;
-  --brand-green-dark: #6a9d24;
+  --brand-green-dark: #3d6a10;
   --brand-cream: #f7f5f1;
   --brand-warm: #e5e2d9;
 
@@ -370,11 +370,11 @@ nav { display: flex; align-items: center; gap: 8px; }
 }
 .btn-primary {
   background: var(--brand-green);
-  color: var(--text-dark);
+  color: #fff;
 }
 .btn-primary:hover {
   background: var(--brand-green-dark);
-  color: var(--text-dark);
+  color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 6px 24px rgba(160,206,78,.35);
 }
